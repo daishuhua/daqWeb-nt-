@@ -47,6 +47,5 @@ public class DetectDeviceRequestFilter implements ContainerRequestFilter{
             requestContext.setMethod(HttpMethod.GET);
         }
         requestContext.setRequestUri(requestUri);
-        System.out.println(requestUri);
     }
 }
