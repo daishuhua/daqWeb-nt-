@@ -13,11 +13,11 @@ import java.util.Map;
  * Created by daishuhua on 17-2-3.
  */
 @Path("/")
-@Produces("text/html")
 public class NoticeResource {
 
     @GET
-    @Path("{subResources:.+}")
+//    @Path("{subResources:.+}")
+    @Path("pc")
     @Template(name = "/notice")
     @Produces("text/html")
     public String showNoticePage() {
@@ -25,7 +25,8 @@ public class NoticeResource {
     }
 
     @POST
-    @Path("{subResources:.+}")
+//    @Path("{subResources:.+}")
+    @Path("mobile")
     @Produces("application/json")
     public Map<String, String> responseMobileApi() {
         Map<String, String> test = new HashMap<>();

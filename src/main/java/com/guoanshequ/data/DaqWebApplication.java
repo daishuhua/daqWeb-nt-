@@ -17,5 +17,6 @@ public class DaqWebApplication extends ResourceConfig {
         this.packages(ResourceMarker.class.getPackage().getName());
         this.register(MustacheMvcFeature.class);
         this.register(JacksonFeature.class);
+        this.register(DetectDeviceRequestFilter.class);
     }
 }
